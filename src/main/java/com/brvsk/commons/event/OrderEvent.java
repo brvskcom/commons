@@ -1,14 +1,17 @@
 package com.brvsk.commons.event;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Setter
 public class OrderEvent {
     private String email;
     private String orderTrackingNumber;
-    private MailNotificationType mailNotificationType;
+    private String mailNotificationType;
+
+    public OrderEvent(String email, String orderTrackingNumber, String mailNotificationType) {
+        this.email = email;
+        this.orderTrackingNumber = orderTrackingNumber;
+        this.mailNotificationType = mailNotificationType;
+    }
 }
