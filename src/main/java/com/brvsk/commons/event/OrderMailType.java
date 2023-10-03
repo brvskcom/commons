@@ -1,6 +1,6 @@
 package com.brvsk.commons.event;
 
-public enum MailNotificationType {
+public enum OrderMailType {
     ORDER_PLACED("Order Placed"),
     ORDER_PAID("Order Paid"),
     ORDER_SHIPPED("Order Shipped"),
@@ -8,7 +8,7 @@ public enum MailNotificationType {
 
     private final String mailTitle;
 
-    MailNotificationType(String mailTitle) {
+    OrderMailType(String mailTitle) {
         this.mailTitle = mailTitle;
     }
 
