@@ -1,4 +1,4 @@
-package com.brvsk.commons.payment;
+package com.brvsk.commons.clients.payment;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
